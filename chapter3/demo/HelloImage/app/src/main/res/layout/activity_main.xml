@@ -6,12 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.android_learning.chapter3.helloimage.MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/android"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/android"
+            android:layout_weight="1"/>
+
+
+        <ImageView
+            android:id="@+id/iv_head2"
+            android:layout_width="348dp"
+            android:layout_height="162dp"
+            android:src="@drawable/ted"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginRight="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintTop_toTopOf="@+id/iv_head"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_head"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintVertical_bias="0.291" />
+
+
 </android.support.constraint.ConstraintLayout>
